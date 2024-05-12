@@ -2,52 +2,67 @@
 <html>
 <head>
     <title>Jode</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #3d9259;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            border-radius: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid #ffffff;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-            box-shadow: inset 5px rgba(0,0,0,1);
-        }
-    </style>
+    <link rel="stylesheet" href="bootstrap.css">
+    
 </head>
 <body>
     <header>
-        <h1>Sunday Jode</h1>
+<h1>Sunday Jode</h1>
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
     </header>
     
     <section>
         <h2>1.Banhatti Halqa</h2>
+        <div>
+            <label for="exampleInputEmail1" class="form-label mt-4">Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+            
+          </div>
+        
         <p>Place : Mohammadiya Masjid<br>Time : 7.15 am to 8.15 am</p>
     </section>
     
     <section>
+        
         <h2>Note</h2>
         <p>Apne apne masjid ke sare Students ko Sunday ki hafte-wari mehnat ke liye bhejne ki fikar karen.</p>
     </section>
@@ -57,3 +72,4 @@
     </footer>
 </body>
 </html>
+
